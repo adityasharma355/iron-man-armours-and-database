@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Man - Armor Database</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #0a0a0a;
+            color: #fff;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        header h1 {
+            font-size: 5rem;
+            color: #ff0000;
+            text-shadow: 2px 2px 5px #000;
+            margin-bottom: 20px;
+            font-family: 'Marvel', sans-serif;
+        }
+        
+        header p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #ff0000;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #cc0000;
+            transform: scale(1.05);
+        }
+        
+        nav {
+            background-color: #1a1a1a;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 20px 0;
+        }
+        
+        nav ul li {
+            margin: 0 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #ff0000;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        
+        section {
+            margin-bottom: 80px;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            color: #ff0000;
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: 'Marvel', sans-serif;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            color: #ff0000;
+            margin: 30px 0 15px;
+        }
+        
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .suits-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .suit-card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .suit-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .suit-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .suit-info {
+            padding: 20px;
+        }
+        
+        .suit-info h3 {
+            margin-top: 0;
+        }
+        
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>IRON MAN</h1>
+        <p>Genius. Billionaire. Playboy. Philanthropist.</p>
+<P>WEB.by. Aditya sharma.</P>
+        <a href="#about" class="btn">Explore Armors</a>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About Iron Man</a></li>
+            <li><a href="#suits">Armor Suits</a></li>
+            <li><a href="#tech">Technology</a></li>
+            <li><a href="#history">History</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>Tony Stark - Iron Man</h2>
+            <p>Anthony Edward "Tony" Stark is a fictional character in the Marvel Comics universe and the Marvel Cinematic Universe (MCU). He is a genius inventor, engineer, and billionaire industrialist who creates a mechanized suit of armor to save his own life and later uses it to protect the world as Iron Man.</p>
+            
+            <h3>Origin Story</h3>
+            <p>While in Afghanistan to demonstrate a new missile for the U.S. military, Stark is kidnapped by terrorists and seriously wounded. Forced to build a weapon for his captors, Stark instead secretly creates a powered suit of armor to save his life and escape captivity. Upon returning home, Stark improves his armor and becomes the armored superhero Iron Man, battling threats that endanger the world.</p>
+            
+            <h3>Personality and Traits</h3>
+            <p>Tony Stark is known for his brilliant intellect, quick wit, and charismatic but egotistical personality. Despite his flaws, he is deeply committed to using his technology to protect humanity. His character evolves from a weapons manufacturer to a selfless hero who makes the ultimate sacrifice to save the universe in Avengers: Endgame.</p>
+            
+            <h3>Abilities</h3>
+            <p>Without his armor, Stark is still exceptionally intelligent with expertise in physics, engineering, and computer science. With his armor, he gains:</p>
+            <ul>
+                <li>Superhuman strength and durability</li>
+                <li>Flight capability</li>
+                <li>Advanced weapon systems</li>
+                <li>Energy repulsors and unibeam projector</li>
+                <li>Advanced sensor arrays and computer systems</li>
+                <li>Various other specialized systems depending on the armor model</li>
+            </ul>
+        </section>
+        
+        <section id="suits">
+            <h2>Iron Man Armor Suits</h2>
+            <p>Tony Stark has created numerous armor suits, each with specialized capabilities. Here are some of the most notable ones:</p>
+            
+            <div class="suits-container">
+                <div class="suit-card">
+                    <img src="https://th.bing.com/th/id/R.21fc472389b47f4ca228f6628312db55?rik=8rz55fUEuUwEwg&riu=http%3a%2f%2fvignette3.wikia.nocookie.net%2fmarvelmovies%2fimages%2f8%2f85%2fIronManMk1_promo.jpg%2frevision%2flatest%3fcb%3d20140122053926&ehk=9Sv7F6%2f1YUh8eLq%2fRh%2bfKSeaQOT8jZLKwn5wD9lnNhU%3d&risl=&pid=ImgRaw&r=0 I Armor">
+                    <div class="suit-info">
+                        <h3>Mark I (2008)</h3>
+                        <p>The first Iron Man suit, built in a cave with limited resources. Features basic armor plating, flamethrowers, and a jet boot for limited flight. Powered by a miniaturized arc reactor.</p>
+                        <p><strong>Key Features:</strong> Crude but effective, bulletproof, limited flight capability</p>
+                    </div>
+                </div>
+                
+                <div class="suit-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.byTj1reFK59Ymj_kxWsEfAHaSH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3 alt="Mark III Armor">
+                    <div class="suit-info">
+                        <h3>Mark III (2008)</h3>
+                        <p>The first red and gold armor with full weapons systems. Features repulsor beams, missile launchers, and improved flight systems. Gold titanium alloy makes it lightweight yet durable.</p>
+                        <p><strong>Key Features:</strong> First iconic color scheme, integrated weapons, improved flight</p>
+                    </div>
+                </div>
+                
+                <div class="suit-card">
+                    <img src="https://i.etsystatic.com/25116497/r/il/8a5263/5272110219/il_1080xN.5272110219_41jg.jpg" alt"="Mark v Armor">
+                    <div class="suit-info">
+                        <h3>Mark V (2010)</h3>
+                        <p>The "Briefcase Armor" designed for portability. Can fold into a briefcase for easy transport. Less weaponized than other models but provides rapid deployment.</p>
+                        <p><strong>Key Features:</strong> Portable design, rapid deployment, limited weaponry</p>
+                    </div>
+                </div>
+                
+                <div class="suit-card">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.l5y7spe6Lbph6bd2urdFQgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mark VII Armor">
+                    <div class="suit-info">
+                        <h3>Mark VII (2012)</h3>
+                        <p>Featured in The Avengers, this suit includes automated assembly and more advanced weaponry. Can be remotely summoned and assembled around Stark.</p>
+                        <p><strong>Key Features:</strong> Automated assembly, advanced weaponry, improved flight</p>
+                    </div>
+                </div>
+                
+                <div class="suit-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.YvBQHbbKeDGRIdl7m0H_1QAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mark XLV Armor">
+                    <div class="suit-info">
+                        <h3>Mark XLV (2015)</h3>
+                        <p>The "House Party Protocol" armor from Iron Man 3. Part of a fleet of specialized armors controlled by JARVIS. Features improved repulsor technology and flight systems.</p>
+                        <p><strong>Key Features:</strong> Specialized design, part of armor fleet, advanced systems</p>
+                    </div>
+                </div>
+                
+                <div class="suit-card">
+                    <img src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/a/a0/Iron_Man_Armor_-_Mark_L.png/revision/latest?cb=20180318221316" alt="Mark L Armor">
+                    <div class="suit-info">
+                        <h3>Mark L (2018)</h3>
+                        <p>The "Bleeding Edge" armor from Infinity War. Nanotechnology allows the armor to form from a housing unit in Stark's chest. Highly adaptable with numerous weapon configurations.</p>
+                        <p><strong>Key Features:</strong> Nanotechnology, instant deployment, highly adaptable</p>
+                    </div>
+                </div>
+                
+                <div class="suit-card">
+                    <img src="https://i.pinimg.com/originals/cd/47/84/cd47841bc9441e223282f7a08f203751.jpg" alt="Mark LXXXV Armor">
+                    <div class="suit-info">
+                        <h3>Mark LXXXV (2019)</h3>
+                        <p>The final armor featured in Endgame. Combines nanotechnology with more traditional armor plating. Features enhanced strength and an energy shield. Used in the battle against Thanos.</p>
+                        <p><strong>Key Features:</strong> Hybrid design, energy shield, enhanced strength</p>
+                    </div>
+                </div>
+                
+                <div class="suit-card">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.6ibIXoFIoGyXHO187XsRWQHaIo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Hulkbuster Armor">
+                    <div class="suit-info">
+                        <h3>Hulkbuster (2015)</h3>
+                        <p>Specialized armor designed to counter the Hulk's strength. Can deploy over existing armor. Features enhanced strength and durability with modular components.</p>
+                        <p><strong>Key Features:</strong> Massive size, extreme strength, modular design</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="tech">
+            <h2>Iron Man Technology</h2>
+            <p>Tony Stark's genius has created numerous technological marvels that power his suits and protect the world:</p>
+            
+            <h3>Arc Reactor Technology</h3>
+            <p>The miniaturized arc reactor was originally designed to power Stark Industries facilities, but Stark miniaturized it to power his electromagnet keeping shrapnel from his heart, and later his armor suits. It provides clean, nearly limitless energy.</p>
+            
+            <h3>J.A.R.V.I.S. and F.R.I.D.A.Y.</h3>
+            <p>Stark's artificial intelligence systems that manage his suits and home systems. J.A.R.V.I.S. (Just A Rather Very Intelligent System) was later evolved into Vision, while F.R.I.D.A.Y. (Female Replacement Intelligent Digital Assistant Youth) took over as his primary AI.</p>
+            
+            <h3>Repulsor Technology</h3>
+            <p>Originally developed as a non-lethal weapon, repulsor beams serve as Iron Man's primary offensive weapon and flight stabilization system. They convert the arc reactor's energy into concentrated beams of force.</p>
+            
+            <h3>Nanotechnology</h3>
+            <p>Stark's later armors utilize nanotechnology, allowing the suit to form instantly from a housing unit and reconfigure itself as needed. This provides unparalleled adaptability in combat situations.</p>
+            
+            <h3>Other Notable Inventions</h3>
+            <ul>
+                <li>Unibeam - A powerful chest-mounted energy projector</li>
+                <li>Smart Missiles - Self-guided micro-missiles</li>
+                <li>Energy Shield - Protective force field</li>
+                <li>Friday Interface - Advanced holographic control system</li>
+            </ul>
+        </section>
+        
+        <section id="history">
+            <h2>History and Legacy</h2>
+            <p>Iron Man has had a profound impact on the Marvel Universe and beyond:</p>
+            
+            <h3>Founding the Avengers</h3>
+            <p>Tony Stark was instrumental in forming the Avengers initiative, bringing together Earth's mightiest heroes to face threats too large for any single hero. His leadership (and funding) helped establish the team.</p>
+            
+            <h3>The Sokovia Accords</h3>
+            <p>After the collateral damage caused by Avengers missions, Stark supported government oversight of enhanced individuals through the Sokovia Accords, leading to conflict with Captain America and the Avengers Civil War.</p>
+            
+            <h3>Time Heist and Sacrifice</h3>
+            <p>In Avengers: Endgame, Stark developed time travel technology that allowed the Avengers to reverse Thanos's snap. He ultimately sacrificed himself to save the universe, using the Infinity Stones to defeat Thanos and his army.</p>
+            
+            <h3>Legacy</h3>
+            <p>Tony Stark's legacy lives on through his technology, his proteges (like Spider-Man and Riri Williams/Ironheart), and his family. His final message to the world emphasized the importance of cherishing every moment of life.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Iron Man Armor Database. All information is based on Marvel Comics and Marvel Cinematic Universe.</p>
+        <p>This is a fan-made website for educational purposes only.</p>
+    </footer>
+</body>
+</html>
